@@ -36,4 +36,12 @@ fork that repo, change it, and use it for the -RPLUGIN.SRC.nodejs url above.
 
 Otherwise - fork this ! 
 
+# Notes
+git clone ssh://git@git.cloudbees.com/madi/netspace.git
+cd netspace
+echo 'Repository netspace' > README
+git add README
+git commit -m 'Initial checkin'
+git push origin master
+
 
