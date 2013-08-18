@@ -8,9 +8,8 @@ var port = process.env.PORT != undefined ? process.env.PORT : 8080;
 
 http.createServer(function (request, response) {
 		var filePath = '.' + request.url;
-		console.log("Path is " + filePath);
 		if (filePath == './')
-			filePath = 'app/index.html';
+			filePath = 'index.html';
 		
 		var extname = path.extname(filePath);
 		var contentType = 'text/html';
