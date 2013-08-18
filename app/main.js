@@ -4,12 +4,12 @@ var http = require('http');
 var fs = require('fs');
 var path = require('path');
 var port = process.env.PORT != undefined ? process.env.PORT : 8080;
-
+var live = true;
 
 http.createServer(function (request, response) {
 		var filePath = '.' + request.url;
 		if (filePath == './')
-			filePath = 'index.html';
+			filePath = (live ? '' : 'app/') + 'index.html';
 		
 		var extname = path.extname(filePath);
 		var contentType = 'text/html';
