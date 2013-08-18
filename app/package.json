@@ -1,4 +1,7 @@
 {
-  "name" : "barebones",
-  "version" : "0.0.0"
+  "name" : "netspace",
+  "version" : "1.0.0",
+  "dependencies": {
+    "ember": "latest"
+  }
 }
