@@ -31,7 +31,22 @@
   </head>
 
   <body>
+	  
+  <script type="text/x-handlebars">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <a class="brand" href="#">Bloggr</a>
+          <ul class="nav">
+            <li>{{#linkTo 'posts'}}Posts{{/linkTo}}</li>
+            <li>{{#linkTo 'about'}}About{{/linkTo}}</li>
+          </ul>
+        </div>
+      </div>
 
+      {{outlet}}
+    </script>
+	
+	
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -45,7 +60,7 @@
             <ul class="nav">
               <li><a href="http://www.linkedin.com/in/madalinamutihac">LinkedIn</a></li>
 			  <li><a href="https://twitter.com/MadalinaMutihac">Twitter</a></li>
-			  <li><a href="resume/MadalinaMutihac.md">Web CV</a></li>
+			  <li><a href="resume/MadalinaMutihac.md">Web Resume</a></li>
             </ul>
             
           </div><!--/.nav-collapse -->
@@ -54,16 +69,22 @@
     </div>
 
     <div class="container">
-
+	
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <h1>Madalina Mutihac</h1>
         <p><strong><span style = "font-size:12px;">>> </span>a.k.a Madi </strong> - major coffee junkie, IT girl with a passion for technology, design and life.</p>
         <p>
-			<a href="resume/MadalinaMutihac.pdf" class="btn btn-primary btn-large">Resume&raquo;</a>
+			<a href="./resume/MadalinaMutihac.pdf" class="btn btn-primary btn-large">Resume&raquo;</a>
 			<a href="" class="btn btn-primary btn-large">My LinkedIn Profile&raquo;</a>
 		</p>
       </div>
+	   
+	  <script type="text/x-handlebars" id="resume">
+	  	<div>
+		bla bla bla
+		</div>
+	  </script>
 
       <!-- Example row of columns -->
       <div class="row">
@@ -84,6 +105,7 @@
 			  closer to who I am and to what I want in my career.</p>
           <p><a class="btn" href="tobecontinued" >Read more about my adventures here &raquo;</a></p>
         </div>
+		
       </div>
 
       <hr>
@@ -97,11 +119,11 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery-1.9.1.js"></script>
-    <script src="js/handlebars-1.0.0.js"></script>
-    <script src="js/ember-1.0.0-rc.7.js"></script>
-    <script src="js/netspace.js"></script>
+    <script src="./js/bootstrap-transition.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquery-1.9.1.js"></script>
+    <script src="./js/handlebars-1.0.0.js"></script>
+    <script src="./js/ember-1.0.0-rc.7.js"></script>
+    <script src="./js/netspace.js"></script>
   </body>
 </html>

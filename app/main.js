@@ -4,14 +4,16 @@ var http = require('http');
 var fs = require('fs');
 var path = require('path');
 var port = process.env.PORT != undefined ? process.env.PORT : 8080;
-var live = true;
+var live = false;
 
 http.createServer(function (request, response) {
 		var filePath = '.' + request.url;
+		console.log("filepath: " + filePath);
 		if (filePath == './')
 			filePath = (live ? '' : 'app/') + 'index.html';
 		
 		var extname = path.extname(filePath);
+
 		var contentType = 'text/html';
 		switch (extname) {
 			case '.js':
@@ -19,6 +21,9 @@ http.createServer(function (request, response) {
 				break;
 			case '.css':
 				contentType = 'text/css';
+				break;
+			case '.pdf':
+				contentType = 'application/pdf';
 				break;
 		}
 	
