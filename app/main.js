@@ -4,7 +4,7 @@ var http = require('http');
 var fs = require('fs');
 var path = require('path');
 var port = process.env.PORT != undefined ? process.env.PORT : 8080;
-var live = true;
+var live = live;
 
 http.createServer(function (request, response) {
 		var filePath = '.' + request.url;
