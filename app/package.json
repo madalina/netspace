@@ -1,8 +1,0 @@
-{
-  "name" : "netspace",
-  "version" : "1.0.0",
-  "dependencies": {
-    "ember": "latest",
-	"node-markdown": "latest"
-  }
-}

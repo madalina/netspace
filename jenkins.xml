@@ -89,7 +89,7 @@ mkdir target
 
 export PATH=$PATH:$WORKSPACE/node_lib/bin
 
-cd app
+<!--cd app -->
 npm install
 npm test
 

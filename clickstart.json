@@ -1,8 +1,8 @@
 {
     "id": "nodejs-clickstart",
-    "name": "Node.js web server",
+    "name": "Madi's Netspace",
     "source": "github",
-    "description" : "Deploy a node.js application on CloudBees with continuous deployment (beta)",
+    "description" : "",
     "icon" : "https://d3ko533tu1ozfq.cloudfront.net/clickstart/nodejs_large.png",    
 
     "supported-by" : "community",
