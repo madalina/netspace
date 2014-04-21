@@ -1,1 +1,10 @@
 /target
+.metadata/
+node_modules/ember/.DS_Store
+node_modules/express3-handlebars/.DS_Store
+node_modules/grunt-cli/.DS_Store
+node_modules/handlebars/.DS_Store
+node_modules/moment/.DS_Store
+node_modules/node-markdown/.DS_Store
+node_modules/showdown/.DS_Store
+resume/.DS_Store
