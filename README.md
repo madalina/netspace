@@ -53,5 +53,3 @@ echo 'Repository netspace' > README
 git add README
 git commit -m 'Initial checkin'
 git push origin master
-
-
