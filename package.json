@@ -4,9 +4,11 @@
   "dependencies": {
     "ember": "latest",
     "node-markdown": "latest",
-    "express3-handlebars": "~0.5.0"
+    "express3-handlebars": "~0.5.0",
+    "logfmt": "~1.1.2",
+    "express": "~4.2.0"
   },
-  "description": "##Initial setup of existing source Heroku recognizes an app as Node.js by the existence of a package.json file. To create one, run npm init in the root directory of your app. The npm init utility will walk you through creating a package.json file.",
+  "description": "Madi's playground.",
   "main": "app.js",
   "devDependencies": {},
   "scripts": {
@@ -16,6 +18,7 @@
     "type": "git",
     "url": "ssh://git@github.com:madalina/netspace.git"
   },
+  
   "keywords": [
     "madalina",
     "mutihac",
