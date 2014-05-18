@@ -1,9 +1,29 @@
 {
-  "name" : "netspace",
-  "version" : "1.0.0",
+  "name": "netspace",
+  "version": "1.0.0",
   "dependencies": {
     "ember": "latest",
-	"node-markdown": "latest",
-	"express3-handlebars": "~0.5.0"
+    "node-markdown": "latest",
+    "express3-handlebars": "~0.5.0"
+  },
+  "description": "##Initial setup of existing source Heroku recognizes an app as Node.js by the existence of a package.json file. To create one, run npm init in the root directory of your app. The npm init utility will walk you through creating a package.json file.",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:madalina/netspace.git"
+  },
+  "keywords": [
+    "madalina",
+    "mutihac",
+    "netspace"
+  ],
+  "author": "Madi",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/madalina/netspace/issues"
   }
 }

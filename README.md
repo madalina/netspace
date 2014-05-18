@@ -1,4 +1,14 @@
-#  Node.js clickstart
+#Heroku start
+
+##Initial setup of existing source
+Heroku recognizes an app as Node.js by the existence of a package.json file. To create one, run npm init in the root directory of your app. The npm init utility will walk you through creating a package.json file. 
+
+
+
+
+
+#Cloudbees start
+##  Node.js clickstart
 
 This clickstart demonstrates a basic hello world node.js app on CloudBees with continuous deployment.
 Jenkins runs tests via npm. 
@@ -15,28 +25,28 @@ If you don't have a cloudbees account:
 
 
 
-# To run manually locally
+## To run manually locally
 
 
 0. Install node.js
 1. Clone this repo
 2. node app/main.js
 
-# To deploy manually to CloudBees
+## To deploy manually to CloudBees
 
 1. cd app
 2. zip -r ../app.zip
 3. bees app:deploy -t nodejs -RPLUGIN.SRC.nodejs=https://s3.amazonaws.com/clickstacks/admin/nodejs-plugin-0.10.5.zip ../app.zip
 
 
-# The node.js clickstack
+## The node.js clickstack
 See here if you want to change how it work: https://github.com/CloudBees-community/node-clickstack
 The node-clickstack makes this possible - if you want to tweak how the node.js container works
 fork that repo, change it, and use it for the -RPLUGIN.SRC.nodejs url above.
 
 Otherwise - fork this ! 
 
-# Notes
+## Notes
 git clone ssh://git@git.cloudbees.com/madi/netspace.git
 cd netspace
 echo 'Repository netspace' > README
